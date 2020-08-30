@@ -29,6 +29,8 @@ public class CombatManager : MonoBehaviour
     private GameManager gm;
     private CombatUiManager combatUiManager;
     private CombatActionsManager combatActionsManager;
+
+    public Camera combatCamera;
     
     void Awake()
     {
@@ -198,7 +200,8 @@ public class CombatManager : MonoBehaviour
 
     public void SkipPause()
     {
-        if (charactersInTurnOrder[currentCharacterIndex].inParty && currentBattleState == BattleState.TurnStart)
+        print("here");
+        if (charactersInTurnOrder[currentCharacterIndex].inParty && currentBattleState == BattleState.TurnStart && charactersInTurnOrder[currentCharacterIndex].hp > 0 && charactersInTurnOrder[currentCharacterIndex].conscious > 0)
             return;
 
         NextBattleStep();
@@ -207,6 +210,7 @@ public class CombatManager : MonoBehaviour
 
     public void NextBattleStep()
     {
+        print("here2");
         switch (currentBattleState)
         {
             case BattleState.TurnStart:

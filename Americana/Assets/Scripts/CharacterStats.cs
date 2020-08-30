@@ -33,4 +33,5 @@ public class CharacterStats: MonoBehaviour
     [Header("Links")] 
     public CharacterInventory inventory;
     public CharacterVisualController visual;
+    public CharacterPlayerInteractor interactor;
 }

@@ -7,6 +7,7 @@ public class CityManager : MonoBehaviour
     public static CityManager instance;
 
     [SerializeField] private GameObject cityActiveElements;
+    public Camera cityCamera;
 
     public bool playerCityInput = false;
     
@@ -34,6 +35,4 @@ public class CityManager : MonoBehaviour
     {
         playerCityInput = false;
     }
-    
-    
 }

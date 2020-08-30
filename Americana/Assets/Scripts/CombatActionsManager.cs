@@ -86,7 +86,7 @@ public class CombatActionsManager : MonoBehaviour
             {
                 c.conscious -= consciousDamageToEveyone;
 
-                if (c.conscious <= 0)
+                if (c.conscious <= c.consciousMax * 0.005)
                 {
                     // character is down feedback
                     // play uncoiscious anim
@@ -116,18 +116,29 @@ public class CombatActionsManager : MonoBehaviour
 
             target.hp -= damage;   
         }
+
+        bool alive = true;
         
-        if (target.conscious <= 0)
+        if (target.conscious <= target.consciousMax * 0.005)
         {
+            alive = false;
             // character is down feedback
             // play uncoiscious anim
         }
         
-        if (target.hp <= 0)
+        if (target.hp <= target.hpMax * 0.005)
         {
+            alive = false;
             // character is dead feedback
             // play dead anim
         }
+        
+        if (alive)
+            target.visual.AnimateCharacter(CharacterVisualMessage.Message.Damaged);
+        else    
+            target.visual.AnimateCharacter(CharacterVisualMessage.Message.Dead);
+        
+        character.visual.AnimateCharacter(CharacterVisualMessage.Message.Act);
 
         combatUiManager.UpdateStatusBars(true);
         combatUiManager.UpdateStatusBars(false);

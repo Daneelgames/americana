@@ -13,8 +13,7 @@ public class CombatUiManager : MonoBehaviour
     
     [SerializeField] private SpriteRenderer characterTurnFeedback;
     [SerializeField] private Animator characterTurnFeedbackAnim;
-    [SerializeField] private Animator characterTargetFeedbackAnim;
-    [SerializeField] private GameObject charactersTargetsCanvas;
+    //[SerializeField] private GameObject charactersTargetsCanvas;
     
     [Header("Buttons")]
     [SerializeField] private Animator actionButtonsAnim; 
@@ -32,9 +31,6 @@ public class CombatUiManager : MonoBehaviour
     [SerializeField] private List<GameObject> talentButtons = new List<GameObject>();
     [SerializeField] private Animator inventorySubButtonsAnim;
     [SerializeField] private List<GameObject> inventoryButtons = new List<GameObject>();
-    
-    [SerializeField] private Animator feedbackTextAnim;
-    [SerializeField] private TextMeshProUGUI feedbackTextField;
     
     [Header("Sub buttons anims")]
     [SerializeField] private Animator wpnSubButtonAnim;
@@ -56,6 +52,7 @@ public class CombatUiManager : MonoBehaviour
     private GameManager gm;
     private CombatManager combatManager;
     private CombatActionsManager combatActionsManager;
+    private PlayerClickInWorld pcw;
 
     private CombatActionsManager.Actions playersCurrentAction = CombatActionsManager.Actions.Run;
     
@@ -69,27 +66,28 @@ public class CombatUiManager : MonoBehaviour
         gm = GameManager.instance;
         combatManager = CombatManager.instance;
         combatActionsManager = CombatActionsManager.instance;
+        pcw = PlayerClickInWorld.instance;
     }
 
     public void SetStatusBarsToCharacters(List<CharacterStats> characters, bool party)
     {
-        List<StatusBar> tempBars = partyStatusBars;
-        if (!party)
+        npcStatusBars.Clear();
+        
+        List<StatusBar> tempBars = new List<StatusBar>();
+        
+        for (int i = 0; i < characters.Count; i++)
         {
-            tempBars = npcStatusBars;
+            StatusBar newBar = new StatusBar();
+            newBar.character = characters[i];
+            newBar.healthbar = characters[i].visual.healthBar;
+            newBar.consciousBar = characters[i].visual.consciousBar;
+            tempBars.Add(newBar);
         }
         
-        for (int i = 0; i < tempBars.Count; i++)
-        {
-            if (characters.Count > i)
-            {
-                tempBars[i].character = characters[i];
-            }
-            else
-            {
-                tempBars[i].character = null;
-            }
-        }
+        if (!party)
+            npcStatusBars = new List<StatusBar>(tempBars);
+        else
+            partyStatusBars = new List<StatusBar>(tempBars);
     }
     
     public void UpdateStatusBars(bool party)
@@ -121,8 +119,11 @@ public class CombatUiManager : MonoBehaviour
 
     public void SetFeedbackText(string text)
     {
+        /*
         feedbackTextField.text = text;
         feedbackTextAnim.SetTrigger(updateString);
+        */
+        LogWriterController.instance.NewLine(text);
     }
 
     public void ToggleActionButtons(bool active, CharacterStats character)
@@ -141,7 +142,7 @@ public class CombatUiManager : MonoBehaviour
             else
                 itmButtonAnim.gameObject.SetActive(true);
         }
-        charactersTargetsCanvas.SetActive(active);
+        //charactersTargetsCanvas.SetActive(active);
         actionButtonsAnim.SetBool(activeString, active);
     }
 
@@ -152,6 +153,13 @@ public class CombatUiManager : MonoBehaviour
         characterTurnFeedbackAnim.SetTrigger(updateString);
     }
 
+    public void SelectNewCharacter(CharacterStats character)
+    {
+        ToggleTargetFeedback(false);
+        pcw.characterTargetFeedbackAnim.transform.position = character.transform.position;
+        ToggleTargetFeedback(true);
+    }
+    
     void ToggleSubButtons(bool attack, bool talents, bool items)
     {
         attackSubButtonsAnim.SetBool(activeString, attack);
@@ -247,24 +255,9 @@ public class CombatUiManager : MonoBehaviour
     //show target feedback after choosing an action
     void ToggleTargetFeedback(bool active)
     {
-        characterTargetFeedbackAnim.gameObject.SetActive(active);
+        pcw.characterTargetFeedbackAnim.gameObject.SetActive(active);
     }
 
-    public void SelectTargetCharacter(int index)// 0,1,2 - party, 3,4,5,6,7 - npcs
-    {
-        // if target feedback is active and index character is in battle
-        // if (!characterTargetFeedbackAnim.gameObject.activeInHierarchy) return;
-        
-        var character = combatManager.GetCharacterInSlot(index);
-        if (character == null) return;
-
-        ToggleTargetFeedback(false);
-        characterTargetFeedbackAnim.transform.position = character.transform.position;
-        ToggleTargetFeedback(true);
-        SetFeedbackText(character.name[gm.language]);
-        
-        // select character
-    }
     
     // CLICK BUTTONS
 
@@ -281,14 +274,13 @@ public class CombatUiManager : MonoBehaviour
     }
     
     // player's actions
-    public void ClickTargetCharacter(int index)// 0,1,2 - party, 3,4,5,6,7 - npcs
+    public void ClickTargetCharacter(CharacterStats targetCharacter)
     {
         // if target feedback is active and index character is in battle
-        if (!characterTargetFeedbackAnim.gameObject.activeInHierarchy || !playerIsChoosingTargetToact) return;
+        if (!pcw.characterTargetFeedbackAnim.gameObject.activeInHierarchy || !playerIsChoosingTargetToact) return;
         
-        var targetCharacter = combatManager.GetCharacterInSlot(index);
         if (targetCharacter != null)
-            characterTargetFeedbackAnim.transform.position = targetCharacter.transform.position;
+            pcw.characterTargetFeedbackAnim.transform.position = targetCharacter.transform.position;
         
         // act on target
         if (playersCurrentAction == CombatActionsManager.Actions.WeaponAttack ||

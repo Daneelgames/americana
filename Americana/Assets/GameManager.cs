@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform charactersTempTransformsParent;
 
     public int language = 0;
+    public Camera activeCamera;
     
     void Awake()
     {
@@ -37,6 +38,8 @@ public class GameManager : MonoBehaviour
 
     void StartCombat()
     {
+        activeCamera = combatManager.combatCamera;
+        
         cityManager.ToggleCity(false);
         
         // need to find characters who participate in combat
@@ -68,11 +71,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void SetActiveCamera(Camera newCam)
+    {
+        activeCamera = newCam;
+
+        foreach (var ch in npcCharacters)
+        {
+            ch.interactor.UpdateTargetCamera();
+        }
+        foreach (var ch in partyCharacters)
+        {
+            ch.interactor.UpdateTargetCamera();
+        }
+    }
+
     public IEnumerator FinishCombat()
     {
         yield return null;
         cityManager.ToggleCity(true);
+        activeCamera = cityManager.cityCamera;
         
+        /*
         for (int i = 0; i < partyCharacters.Count; i++)
         {
             partyCharacters[i].transform.position = partyTransforms[i].transform.position;
@@ -83,6 +102,6 @@ public class GameManager : MonoBehaviour
         {
             npcCharacters[i].transform.position = npcTransforms[i].transform.position;
             npcCharacters[i].transform.rotation = npcTransforms[i].transform.rotation;
-        }
+        }*/
     }
 }
