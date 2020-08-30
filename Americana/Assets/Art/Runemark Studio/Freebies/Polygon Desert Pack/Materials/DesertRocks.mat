@@ -90,7 +90,7 @@ Material:
     - _GradientCenterX: 0
     - _GradientCenterY: 0
     - _GradientEnabled: 1
-    - _GradientSize: 10
+    - _GradientSize: 21.97
     - _LightContribution: 0
     - _LightmapDirectionPitch: 0
     - _LightmapDirectionYaw: 0
@@ -119,15 +119,15 @@ Material:
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8773585, g: 0.59779304, b: 0.25244746, a: 1}
-    - _ColorDim: {r: 0.6117647, g: 0.16078432, b: 0.1764706, a: 1}
+    - _Color: {r: 0.6415094, g: 0.4113831, b: 0.13011748, a: 1}
+    - _ColorDim: {r: 0.21698111, g: 0.017399432, b: 0.024341363, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
     - _ColorDimExtra: {r: 0.4245283, g: 0.24880967, b: 0.03404237, a: 1}
     - _ColorDimSteps: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
-    - _ColorGradient: {r: 0.3207547, g: 0.21930848, b: 0.095318615, a: 1}
+    - _ColorGradient: {r: 0.2735849, g: 0.1711908, b: 0.045167312, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatRimColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
-    - _FlatSpecularColor: {r: 0.8773585, g: 0.59779304, b: 0.25244743, a: 1}
+    - _FlatSpecularColor: {r: 0.5377358, g: 0.36538136, b: 0.15472585, a: 1}
     - _LightmapDirection: {r: 0, g: 1, b: 0, a: 0}
     - _UnityShadowColor: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
   m_BuildTextureStacks: []

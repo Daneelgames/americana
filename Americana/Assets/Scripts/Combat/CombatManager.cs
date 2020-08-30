@@ -220,43 +220,50 @@ public class CombatManager : MonoBehaviour
                     TurnAction();
                 break;
             case BattleState.ActionStart:
-                TurnActionFeedback();
+                //TurnActionFeedback();
+                
+                LastStepInTurn();
                 break;
             case BattleState.ActionFeedback:
                 // next characters turn
-                currentCharacterIndex--;
-                if (currentCharacterIndex < 0 || currentCharacterIndex >= charactersInTurnOrder.Count)
-                    currentCharacterIndex = charactersInTurnOrder.Count - 1;
-
-                bool partyAlive = false;
-                bool npcAlive = false;
-
-                for (int i = 0; i < partyCharacters.Count; i++)
-                {
-                    if (partyCharacters[i].hp > 0 && partyCharacters[i].conscious > 0)
-                    {
-                        partyAlive = true;
-                        break;
-                    }
-                }
-                for (int i = 0; i < npcCharacters.Count; i++)
-                {
-                    if (npcCharacters[i].hp > 0 && npcCharacters[i].conscious > 0)
-                    {
-                        npcAlive = true;
-                        break;
-                    }
-                }
-
-                if (partyAlive && npcAlive)
-                    NewTurn();
-                else
-                {
-                    StartCoroutine(gm.FinishCombat());
-                    currentBattleState = BattleState.Null;
-                    combatEnvironment.SetActive(false);
-                }
+                LastStepInTurn();
                 break;
+        }
+    }
+
+    void LastStepInTurn()
+    {
+        currentCharacterIndex--;
+        if (currentCharacterIndex < 0 || currentCharacterIndex >= charactersInTurnOrder.Count)
+            currentCharacterIndex = charactersInTurnOrder.Count - 1;
+
+        bool partyAlive = false;
+        bool npcAlive = false;
+
+        for (int i = 0; i < partyCharacters.Count; i++)
+        {
+            if (partyCharacters[i].hp > 0 && partyCharacters[i].conscious > 0)
+            {
+                partyAlive = true;
+                break;
+            }
+        }
+        for (int i = 0; i < npcCharacters.Count; i++)
+        {
+            if (npcCharacters[i].hp > 0 && npcCharacters[i].conscious > 0)
+            {
+                npcAlive = true;
+                break;
+            }
+        }
+
+        if (partyAlive && npcAlive)
+            NewTurn();
+        else
+        {
+            StartCoroutine(gm.FinishCombat());
+            currentBattleState = BattleState.Null;
+            combatEnvironment.SetActive(false);
         }
     }
 

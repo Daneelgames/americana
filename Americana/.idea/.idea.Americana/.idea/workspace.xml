@@ -4,21 +4,151 @@
     <list default="true" id="e7f4c606-e9d6-4053-9b21-6387e70e8743" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/UI/CharacterBarsAnim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/UI/CharacterBarsAnim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/UI/actionButtonsActive.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/UI/actionButtonsActive.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/UI/infoFeedbackUpdate.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/UI/infoFeedbackUpdate.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CombatManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CombatManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Runemark Studio/Freebies/Polygon Desert Pack/Materials/DesertRocks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Runemark Studio/Freebies/Polygon Desert Pack/Materials/DesertRocks.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Runemark Studio/Freebies/Polygon Desert Pack/Materials/ToonTerrain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Runemark Studio/Freebies/Polygon Desert Pack/Materials/ToonTerrain.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/FileNamesDescription.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/FileNamesDescription.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.text.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.text.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.text.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.text.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group0Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group0Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group1Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group1Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group2Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group2Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group3Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/Materials/group3Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l10km_cc4_sl20_t(12123025)_A87113010_Alley.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l10km_cc4_sl20_t(12123025)_A87113010_Alley.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Obj/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_A87113010_Alley.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_A87113010_Alley.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_A87113010_Alley_m.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_A87113010_Alley_m.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00_m.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00_m.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00_m.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00_m.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00_m.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/Prefabs/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00_m.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Free/ReadMe.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/1RoadMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/1RoadMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/1RoadMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/1RoadMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/2RoadMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/2RoadMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/2RoadMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/2RoadMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/4RoadMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/4RoadMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/4RoadMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/4RoadMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/6RoadMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/6RoadMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/6RoadMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/6RoadMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/CornMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/CornMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/CornMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/CornMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/DefaultPhysicsMaterial.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/DefaultPhysicsMaterial.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/DirtRoadMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/DirtRoadMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/DirtRoadMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/DirtRoadMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GrassMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GrassMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GrassMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GrassMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GuardRailMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GuardRailMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GuardRailMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/GuardRailMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/LeafyMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/LeafyMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/PineMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/PineMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/TreesMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/TreesMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/TreesMob.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Materials/TreesMob.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Corn01b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Corn01b.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/DemoName01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/DemoName01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/GrassGreenTexture512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/GrassGreenTexture512x512.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/GravelRoad_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/GravelRoad_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/GravelRoad_01_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/GravelRoad_01_n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Guardrails01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Guardrails01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Guardrails01_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Guardrails01_n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/MyListTree02b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/MyListTree02b.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/MyPineTree04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/MyPineTree04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_1lane_dark01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_1lane_dark01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_2lane_dark02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_2lane_dark02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_2lane_dark02_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_2lane_dark02_n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_4lane_dark02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_4lane_dark02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_4lane_dark02_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_4lane_dark02_n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_6lane_dark02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_6lane_dark02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_6lane_dark02_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/Road_6lane_dark02_n.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/WideTreeLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/WideTreeLine.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/byKajaman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/KajamansRoads/Textures/byKajaman.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LogWriterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LogWriterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterVisualController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterVisualController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CityManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CombatActionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CombatActionsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -41,6 +171,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerClickInWorld.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,16 +187,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CombatFeedbackTextsDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/LogWriterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CityManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterStats.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterPlayerInteractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterVisualController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CombatActionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerClickInWorld.cs" />
+        <option value="$PROJECT_DIR$/Assets/LogWriterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CombatActionsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoadManager.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +242,7 @@
       <workItem from="1598776062387" duration="1369000" />
       <workItem from="1598788323538" duration="763000" />
       <workItem from="1598789707634" duration="8644000" />
+      <workItem from="1598807421186" duration="8313000" />
     </task>
     <servers />
   </component>
@@ -117,10 +250,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="250" key="run.anything.popup" timestamp="1598520455794">
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1598816517082">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1598520455794" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1598816517082" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1598798481756">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

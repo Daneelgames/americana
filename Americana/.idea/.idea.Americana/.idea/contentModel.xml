@@ -94,17 +94,18 @@
               </e>
             </e>
           </e>
+          <e p="KajamansRoads" t="Include">
+            <e p="FileNamesDescription.txt" t="Include" />
+            <e p="Free" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="CharacterPlayerInteractor.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
-        <e p="KajamansRoads" t="Include">
-          <e p="FileNamesDescription.txt" t="Include" />
-          <e p="Free" t="Include">
-            <e p="ReadMe.txt" t="Include" />
-          </e>
-        </e>
         <e p="LogWriterController.cs" t="Include" />
         <e p="PlayerClickInWorld.cs" t="Include" />
+        <e p="RoadManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CharacterInventory.cs" t="Include" />
           <e p="CharacterStats.cs" t="Include" />

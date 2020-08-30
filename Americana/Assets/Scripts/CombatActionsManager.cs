@@ -90,6 +90,8 @@ public class CombatActionsManager : MonoBehaviour
                 {
                     // character is down feedback
                     // play uncoiscious anim
+                    c.visual.AnimateCharacter(CharacterVisualMessage.Message.Dead);
+                    RoadManager.instance.AddObjectToMovingObjectsOnRoad(c.gameObject);
                 }
             }
         }
@@ -135,8 +137,11 @@ public class CombatActionsManager : MonoBehaviour
         
         if (alive)
             target.visual.AnimateCharacter(CharacterVisualMessage.Message.Damaged);
-        else    
-            target.visual.AnimateCharacter(CharacterVisualMessage.Message.Dead);
+        else
+        {
+            target.visual.AnimateCharacter(CharacterVisualMessage.Message.Dead);   
+            RoadManager.instance.AddObjectToMovingObjectsOnRoad(target.gameObject);
+        }
         
         character.visual.AnimateCharacter(CharacterVisualMessage.Message.Act);
 

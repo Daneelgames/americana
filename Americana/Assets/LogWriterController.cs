@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class LogWriterController : MonoBehaviour
 
     public TextMeshProUGUI typewriterTextField;
     public Animator typewriterTextFieldAnim;
+    
+    public List<string> savedStrings = new List<string>();
 
     private string updateString = "Update";
     
@@ -19,7 +22,20 @@ public class LogWriterController : MonoBehaviour
 
     public void NewLine(string line)
     {
-        typewriterTextField.text = line;
+        if (savedStrings.Count <= 0 || savedStrings[savedStrings.Count - 1] != line)
+        {
+            savedStrings.Add(line);
+            if (savedStrings.Count > 3)
+                savedStrings.RemoveAt(0);
+
+            line = "";
+            for (int i = 0; i < savedStrings.Count; i++)
+            {
+                line = line + Environment.NewLine + savedStrings[i];
+            }
+
+            typewriterTextField.text = line;
+        }
         typewriterTextFieldAnim.SetTrigger(updateString);
     }
     
