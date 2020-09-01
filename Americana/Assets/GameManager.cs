@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public List<CharacterStats> npcCharacters = new List<CharacterStats>();
 
     private CombatManager combatManager;
+    private CombatUiManager combatUiManager;
     private CityManager cityManager;
     private RoadManager roadManager;
     
@@ -32,13 +33,14 @@ public class GameManager : MonoBehaviour
     {
         combatManager = CombatManager.instance;
         cityManager = CityManager.instance;
+        combatUiManager = CombatUiManager.instance;
         roadManager = RoadManager.instance;
         acw = ActionWheelController.instance;
 
         cityManager.ToggleCity(true);
         
-        yield return new WaitForSeconds(2);
-        StartCombat();
+        yield return null;
+        //StartCombat();
     }
 
     void StartCombat()
@@ -109,7 +111,8 @@ public class GameManager : MonoBehaviour
                 partyCharacters[i].visual.HideCharacter();
             }
         }
-        
+
+        combatUiManager.ToggleTargetFeedback(false);
         roadManager.StartDriving();
         acw.HideWheel();
     }

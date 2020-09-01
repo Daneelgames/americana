@@ -8,8 +8,13 @@ public class RoadManager : MonoBehaviour
     
     public bool moveRoad = false;
     public float moveSpeed = 10;
-    
+
     [Header("Settings")] 
+    public int stepsToNextTown = 5;
+    public int currentStep = 0;
+
+    public float timeBetweenSteps = 5;
+    
     public int farPropsAmount = 10;
     public float farPropsBetweenDistance = 15;
     public int mediumPropsAmount = 20;
@@ -31,6 +36,8 @@ public class RoadManager : MonoBehaviour
 
     private string drivingString = "Driving";
 
+    private Coroutine drivingCoroutine;
+
     void Awake()
     {
         instance = this;
@@ -51,12 +58,22 @@ public class RoadManager : MonoBehaviour
     {
         moveRoad = true;
         partyCar.SetBool(drivingString, true);
+        drivingCoroutine = StartCoroutine(Driving());
+
     }
 
     public void StopDriving()
     {
         moveRoad = false;
         partyCar.SetBool(drivingString, false);
+        
+        StopCoroutine(drivingCoroutine);
+    }
+
+    IEnumerator Driving()
+    {
+        yield return new WaitForSeconds(timeBetweenSteps);
+        // create event
     }
 
     void GenerateRoad()

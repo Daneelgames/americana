@@ -995,7 +995,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cityActiveElements: {fileID: 2780991663521655762}
   cityCamera: {fileID: 2780991663942262664}
-  playerCityInput: 0
 --- !u!114 &2780991664760232294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1055,6 +1054,7 @@ MonoBehaviour:
   - {fileID: 2780991664764160550}
   actionNameFeedbackField: {fileID: 2780991664165337349}
   currentWheelActions: []
+  wheelActive: 0
 --- !u!1 &2780991664764160553
 GameObject:
   m_ObjectHideFlags: 0

@@ -255,7 +255,7 @@ public class CombatUiManager : MonoBehaviour
     }
     
     //show target feedback after choosing an action
-    void ToggleTargetFeedback(bool active)
+    public void ToggleTargetFeedback(bool active)
     {
         pcw.characterTargetFeedbackAnim.gameObject.SetActive(active);
     }
