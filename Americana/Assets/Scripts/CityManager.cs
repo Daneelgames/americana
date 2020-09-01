@@ -9,7 +9,6 @@ public class CityManager : MonoBehaviour
     [SerializeField] private GameObject cityActiveElements;
     public Camera cityCamera;
 
-    public bool playerCityInput = false;
     
     void Awake()
     {
@@ -28,11 +27,9 @@ public class CityManager : MonoBehaviour
 
     void StartSimulation()
     {
-        playerCityInput = true;
     }
     
     void StopSimulation()
     {
-        playerCityInput = false;
     }
 }

@@ -13,6 +13,7 @@ public class CharacterVisualController : MonoBehaviour
     private string deathString = "Death";
     
     private string updateString = "Update";
+    private string hideString = "Hide";
     private string activeString = "Active";
 
     public Animator hpObject;
@@ -51,6 +52,17 @@ public class CharacterVisualController : MonoBehaviour
     void Update()
     {
         hpObject.transform.LookAt(gm.activeCamera.transform.position);
+    }
+
+    public void HideCharacter()
+    {
+        hpObject.SetBool(activeString, false);
+        baseVisualAnim.SetBool(hideString, true);
+    }
+    public void UnhideCharacter()
+    {
+        hpObject.SetBool(activeString, true);
+        baseVisualAnim.SetBool(hideString, false);
     }
 }
 

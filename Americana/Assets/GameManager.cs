@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     private CombatManager combatManager;
     private CityManager cityManager;
+    private RoadManager roadManager;
     
     List<Transform> partyTransforms = new List<Transform>();
     List<Transform> npcTransforms = new List<Transform>();
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public int language = 0;
     public Camera activeCamera;
+
+    private ActionWheelController acw;
     
     void Awake()
     {
@@ -29,6 +32,8 @@ public class GameManager : MonoBehaviour
     {
         combatManager = CombatManager.instance;
         cityManager = CityManager.instance;
+        roadManager = RoadManager.instance;
+        acw = ActionWheelController.instance;
 
         cityManager.ToggleCity(true);
         
@@ -90,18 +95,38 @@ public class GameManager : MonoBehaviour
         yield return null;
         cityManager.ToggleCity(true);
         activeCamera = cityManager.cityCamera;
-        
-        /*
-        for (int i = 0; i < partyCharacters.Count; i++)
+    }
+
+    public void StartDriving()
+    {
+        // hide party inside the car
+        for (int i = partyCharacters.Count - 1; i >= 0; i--)
         {
-            partyCharacters[i].transform.position = partyTransforms[i].transform.position;
-            partyCharacters[i].transform.rotation = partyTransforms[i].transform.rotation;
+            if (partyCharacters[i].hp <= 0)
+                partyCharacters.RemoveAt(i);
+            else
+            {
+                partyCharacters[i].visual.HideCharacter();
+            }
         }
         
-        for (int i = 0; i < npcCharacters.Count; i++)
+        roadManager.StartDriving();
+        acw.HideWheel();
+    }
+
+    public void StopDriving()
+    {
+        roadManager.StopDriving();
+
+        // unhide party
+        for (int i = partyCharacters.Count - 1; i >= 0; i--)
         {
-            npcCharacters[i].transform.position = npcTransforms[i].transform.position;
-            npcCharacters[i].transform.rotation = npcTransforms[i].transform.rotation;
-        }*/
+            if (partyCharacters[i].hp <= 0)
+                partyCharacters.RemoveAt(i);
+            else
+            {
+                partyCharacters[i].visual.UnhideCharacter();
+            }
+        }
     }
 }

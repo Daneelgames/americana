@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17126b0f9d4fd2946992269f0a1f9d72, type: 3}
+  m_Name: ActionWheelDatabase
+  m_EditorClassIdentifier: 
+  actions:
+  - wheelAction: 0
+    names:
+    - Drive
+    spr: {fileID: 21300000, guid: 866d71757477fc447913f0d5028ca870, type: 3}
+  - wheelAction: 1
+    names:
+    - Hide body
+    spr: {fileID: 21300000, guid: b787a934ae470e348a85f659326790c3, type: 3}
+  - wheelAction: 2
+    names:
+    - Talk
+    spr: {fileID: 21300000, guid: f03d3281954cefd4fad7c91749750deb, type: 3}
+  - wheelAction: 3
+    names:
+    - Assault
+    spr: {fileID: 21300000, guid: 573cf8f1e3ae8a84792d0945f990d26b, type: 3}
+  - wheelAction: 4
+    names:
+    - Loot
+    spr: {fileID: 21300000, guid: 4da1dd331581b9d4892bdddfe9bb2025, type: 3}

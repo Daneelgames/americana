@@ -3375,7 +3375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8292043844650071094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -2.68, y: 0, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8292043846163539253}
@@ -3404,15 +3404,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8292043844691877544}
-  m_LocalRotation: {x: 0.1953601, y: -0.10697905, z: 0.02144314, w: 0.9746436}
-  m_LocalPosition: {x: 13.5, y: 13.13, z: -29.27}
+  m_LocalRotation: {x: 0.32935977, y: -0.10294637, z: 0.036152195, w: 0.93787915}
+  m_LocalPosition: {x: 13.5, y: 25, z: -32.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8292043845713627937}
   - {fileID: 8292043845616383711}
   m_Father: {fileID: 8292043844494505755}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 22.669, y: -12.528, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.7, y: -12.528, z: 0}
 --- !u!1 &8292043844770239671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3639,7 +3639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8292043844896958618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4198,7 +4198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8292043845031690865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 4.23, y: 0, z: 1.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8292043846163539253}
@@ -4820,7 +4820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8292043845621162264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.67, y: 0, z: 0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8292043846163539253}
@@ -5035,6 +5035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4dbdd138bc06843afc4e79ac0821b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentBattleState: 3
   combatEnvironment: {fileID: 8292043844494505754}
   partyCharacters: []
   npcCharacters: []
@@ -5084,8 +5085,6 @@ MonoBehaviour:
   - {fileID: 5953763685356912074}
   - {fileID: 4252801414420232277}
   - {fileID: 3391224824329758935}
-  feedbackTextAnim: {fileID: 0}
-  feedbackTextField: {fileID: 0}
   wpnSubButtonAnim: {fileID: 5055013050920902168}
   bareSubButtonAnim: {fileID: 7301985843871682572}
   actSubButtonsAnims:
@@ -5270,7 +5269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8292043846163539252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.85, y: 0.63, z: -6.9}
+  m_LocalPosition: {x: 9.94, y: 0.63, z: -10.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8292043844650071095}

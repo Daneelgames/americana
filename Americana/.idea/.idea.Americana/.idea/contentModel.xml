@@ -6,118 +6,121 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ActionWheelController.cs" t="Include" />
         <e p="Art" t="Include">
-          <e p="FarlandSkies" t="Include">
-            <e p="Demo" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="Player" t="Include">
-                  <e p="FPSWalkerEnhanced.cs" t="Include" />
-                  <e p="SmoothMouseLook.cs" t="Include" />
-                </e>
-                <e p="Skybox" t="Include">
-                  <e p="SkyboxChanger.cs" t="Include" />
-                  <e p="SkyboxRotator.cs" t="Include" />
-                </e>
-              </e>
-            </e>
-          </e>
-          <e p="FlatKit" t="Include">
-            <e p="[READ ME].txt" t="Include" />
-            <e p="[Render Pipeline] URP" t="Include">
-              <e p="RenderFeatures" t="Include">
-                <e p="Common" t="Include">
-                  <e p="ShaderIncludeUtilities.cs" t="Include" />
-                </e>
-                <e p="Fog" t="Include">
-                  <e p="FlatKitFog.cs" t="Include" />
-                  <e p="FogSettings.cs" t="Include" />
-                  <e p="Resources" t="Include">
-                    <e p="FlatKitFog.shader" t="Include" />
-                  </e>
-                </e>
-                <e p="Outline" t="Include">
-                  <e p="FlatKitDepthNormals.cs" t="Include" />
-                  <e p="FlatKitOutline.cs" t="Include" />
-                  <e p="OutlineSettings.cs" t="Include" />
-                  <e p="Resources" t="Include">
-                    <e p="FlatKitOutline.shader" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
-            <e p="Demos" t="Include">
-              <e p="Common" t="Include">
+          <e p="Placeholders" t="Include">
+            <e p="FarlandSkies" t="Include">
+              <e p="Demo" t="Include">
                 <e p="Scripts" t="Include">
-                  <e p="Motion" t="Include">
-                    <e p="CameraMouseOrbit.cs" t="Include" />
-                    <e p="Editor" t="Include">
-                      <e p="LinearMotionEditor.cs" t="Include" />
-                    </e>
-                    <e p="LinearMotion.cs" t="Include" />
+                  <e p="Player" t="Include">
+                    <e p="FPSWalkerEnhanced.cs" t="Include" />
+                    <e p="SmoothMouseLook.cs" t="Include" />
+                  </e>
+                  <e p="Skybox" t="Include">
+                    <e p="SkyboxChanger.cs" t="Include" />
+                    <e p="SkyboxRotator.cs" t="Include" />
                   </e>
                 </e>
               </e>
             </e>
-            <e p="Scripts" t="Include">
-              <e p="Editor" t="Include">
-                <e p="FlatKitImporter.cs" t="Include" />
+            <e p="FlatKit" t="Include">
+              <e p="[READ ME].txt" t="Include" />
+              <e p="[Render Pipeline] URP" t="Include">
+                <e p="RenderFeatures" t="Include">
+                  <e p="Common" t="Include">
+                    <e p="ShaderIncludeUtilities.cs" t="Include" />
+                  </e>
+                  <e p="Fog" t="Include">
+                    <e p="FlatKitFog.cs" t="Include" />
+                    <e p="FogSettings.cs" t="Include" />
+                    <e p="Resources" t="Include">
+                      <e p="FlatKitFog.shader" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Outline" t="Include">
+                    <e p="FlatKitDepthNormals.cs" t="Include" />
+                    <e p="FlatKitOutline.cs" t="Include" />
+                    <e p="OutlineSettings.cs" t="Include" />
+                    <e p="Resources" t="Include">
+                      <e p="FlatKitOutline.shader" t="Include" />
+                    </e>
+                  </e>
+                </e>
               </e>
-              <e p="UvScroller.cs" t="Include" />
-            </e>
-            <e p="Shaders" t="Include">
-              <e p="Editor" t="Include">
-                <e p="StylizedSurfaceEditor.cs" t="Include" />
+              <e p="Demos" t="Include">
+                <e p="Common" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="Motion" t="Include">
+                      <e p="CameraMouseOrbit.cs" t="Include" />
+                      <e p="Editor" t="Include">
+                        <e p="LinearMotionEditor.cs" t="Include" />
+                      </e>
+                      <e p="LinearMotion.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
               </e>
-              <e p="GradientSkybox" t="Include">
+              <e p="Scripts" t="Include">
                 <e p="Editor" t="Include">
-                  <e p="GradientSkyboxEditor.cs" t="Include" />
+                  <e p="FlatKitImporter.cs" t="Include" />
                 </e>
-                <e p="GradientSkybox.shader" t="Include" />
+                <e p="UvScroller.cs" t="Include" />
               </e>
-              <e p="LightPlane.shader" t="Include" />
-              <e p="StylizedSurface" t="Include">
-                <e p="LibraryUrp" t="Include">
-                  <e p="DepthOnlyPass_DR.hlsl" t="Include" />
-                  <e p="Lighting_DR.hlsl" t="Include" />
-                  <e p="LitForwardPass_DR.hlsl" t="Include" />
-                  <e p="LitInput_DR.hlsl" t="Include" />
-                  <e p="ShadowCasterPass_DR.hlsl" t="Include" />
-                  <e p="StylizedInput.hlsl" t="Include" />
-                  <e p="SurfaceInput_DR.hlsl" t="Include" />
-                  <e p="TerrainLitInput_DR.hlsl" t="Include" />
-                  <e p="TerrainLitPasses_DR.hlsl" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="StylizedSurfaceEditor.cs" t="Include" />
                 </e>
-                <e p="StylizedSurface.shader" t="Include" />
-                <e p="StylizedSurfaceCutout.shader" t="Include" />
-                <e p="StylizedSurfaceOutline.shader" t="Include" />
-                <e p="Terrain.shader" t="Include" />
+                <e p="GradientSkybox" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="GradientSkyboxEditor.cs" t="Include" />
+                  </e>
+                  <e p="GradientSkybox.shader" t="Include" />
+                </e>
+                <e p="LightPlane.shader" t="Include" />
+                <e p="StylizedSurface" t="Include">
+                  <e p="LibraryUrp" t="Include">
+                    <e p="DepthOnlyPass_DR.hlsl" t="Include" />
+                    <e p="Lighting_DR.hlsl" t="Include" />
+                    <e p="LitForwardPass_DR.hlsl" t="Include" />
+                    <e p="LitInput_DR.hlsl" t="Include" />
+                    <e p="ShadowCasterPass_DR.hlsl" t="Include" />
+                    <e p="StylizedInput.hlsl" t="Include" />
+                    <e p="SurfaceInput_DR.hlsl" t="Include" />
+                    <e p="TerrainLitInput_DR.hlsl" t="Include" />
+                    <e p="TerrainLitPasses_DR.hlsl" t="Include" />
+                  </e>
+                  <e p="StylizedSurface.shader" t="Include" />
+                  <e p="StylizedSurfaceCutout.shader" t="Include" />
+                  <e p="StylizedSurfaceOutline.shader" t="Include" />
+                  <e p="Terrain.shader" t="Include" />
+                </e>
               </e>
             </e>
-          </e>
-          <e p="KajamansRoads" t="Include">
-            <e p="FileNamesDescription.txt" t="Include" />
-            <e p="Free" t="Include">
-              <e p="ReadMe.txt" t="Include" />
+            <e p="KajamansRoads" t="Include">
+              <e p="FileNamesDescription.txt" t="Include" />
+              <e p="Free" t="Include">
+                <e p="ReadMe.txt" t="Include" />
+              </e>
             </e>
           </e>
         </e>
-        <e p="CharacterPlayerInteractor.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
-        <e p="LogWriterController.cs" t="Include" />
-        <e p="PlayerClickInWorld.cs" t="Include" />
-        <e p="RoadManager.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="ActionWheelDatabase.cs" t="Include" />
           <e p="CharacterInventory.cs" t="Include" />
+          <e p="CharacterPlayerInteractor.cs" t="Include" />
           <e p="CharacterStats.cs" t="Include" />
           <e p="CharacterVisualController.cs" t="Include" />
           <e p="CityManager.cs" t="Include" />
-          <e p="Combat" t="Include">
-            <e p="CombatManager.cs" t="Include" />
-          </e>
           <e p="CombatActionsManager.cs" t="Include" />
           <e p="CombatFeedbackTextsDatabase.cs" t="Include" />
+          <e p="CombatManager.cs" t="Include" />
           <e p="CombatUiManager.cs" t="Include" />
+          <e p="InteractiveObject.cs" t="Include" />
           <e p="InventoryDatabase.cs" t="Include" />
+          <e p="LogWriterController.cs" t="Include" />
+          <e p="PlayerClickInWorld.cs" t="Include" />
+          <e p="RoadManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

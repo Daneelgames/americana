@@ -98,7 +98,7 @@ public class CombatUiManager : MonoBehaviour
             tempBars = npcStatusBars;
         }
         
-        for (int i = 0; i < tempBars.Count; i++)
+        for (int i = tempBars.Count - 1; i >= 0 ; i--)
         {
             if (tempBars[i].character)
             {
@@ -112,7 +112,8 @@ public class CombatUiManager : MonoBehaviour
             }
             else
             {
-                tempBars[i].healthbar.transform.parent.parent.gameObject.SetActive(false);
+                tempBars.RemoveAt(i);
+                //tempBars[i].healthbar.transform.parent.parent.gameObject.SetActive(false);
             }
         }
     }
@@ -153,10 +154,11 @@ public class CombatUiManager : MonoBehaviour
         characterTurnFeedbackAnim.SetTrigger(updateString);
     }
 
-    public void SelectNewCharacter(CharacterStats character)
+    public void SelectNewTarget(Transform target, float scale)
     {
         ToggleTargetFeedback(false);
-        pcw.characterTargetFeedbackAnim.transform.position = character.transform.position;
+        pcw.characterTargetFeedbackAnim.transform.localScale = Vector3.one * scale;
+        pcw.characterTargetFeedbackAnim.transform.position = target.position;
         ToggleTargetFeedback(true);
     }
     
@@ -274,6 +276,7 @@ public class CombatUiManager : MonoBehaviour
     }
     
     // player's actions
+
     public void ClickTargetCharacter(CharacterStats targetCharacter)
     {
         // if target feedback is active and index character is in battle
