@@ -38,6 +38,8 @@ public class RoadManager : MonoBehaviour
 
     private Coroutine drivingCoroutine;
 
+    private RandomEventsController rec;
+
     void Awake()
     {
         instance = this;
@@ -45,6 +47,8 @@ public class RoadManager : MonoBehaviour
     
     void Start()
     {
+        rec = RandomEventsController.instance;
+        
         GenerateRoad();
     }
     
@@ -73,7 +77,19 @@ public class RoadManager : MonoBehaviour
     IEnumerator Driving()
     {
         yield return new WaitForSeconds(timeBetweenSteps);
-        // create event
+        
+        currentStep++;
+
+        if (currentStep >= stepsToNextTown)
+        {
+            //arrive to town
+        }
+        else
+        {
+            // create event
+            // show event message
+            rec.CreateRandomEvent();
+        }
     }
 
     void GenerateRoad()

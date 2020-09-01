@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f4c606-e9d6-4053-9b21-6387e70e8743" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Americana/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CombatManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CombatManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FieldManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FieldManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/UI/InfoFeedbackAnim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/UI/InfoFeedbackAnim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +24,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerClickInWorld.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomEventsDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterPlayerInteractor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CombatFeedbackTextsDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterVisualController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CombatManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RandomEventsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CharacterGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ActionWheelDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,7 +66,10 @@
         <option value="$PROJECT_DIR$/Assets/ActionWheelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CombatUiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharacterGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RoadManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RandomEventsDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/RandomEventsController.cs" />
       </list>
     </option>
   </component>
@@ -110,7 +116,7 @@
       <workItem from="1598789707634" duration="8644000" />
       <workItem from="1598807421186" duration="8313000" />
       <workItem from="1598864057104" duration="11079000" />
-      <workItem from="1598959097166" duration="10325000" />
+      <workItem from="1598959097166" duration="18945000" />
     </task>
     <servers />
   </component>
@@ -118,10 +124,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1598897085317">
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1598987988493">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1598897085317" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1598987988493" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1598968385072">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

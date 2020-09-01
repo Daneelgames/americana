@@ -104,7 +104,9 @@
             </e>
           </e>
         </e>
+        <e p="CharacterGenerator.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
+        <e p="RandomEventsController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActionWheelDatabase.cs" t="Include" />
           <e p="CharacterInventory.cs" t="Include" />
@@ -120,6 +122,7 @@
           <e p="InventoryDatabase.cs" t="Include" />
           <e p="LogWriterController.cs" t="Include" />
           <e p="PlayerClickInWorld.cs" t="Include" />
+          <e p="RandomEventsDatabase.cs" t="Include" />
           <e p="RoadManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a162c97c984a9b468c74eba019e318a, type: 3}
+  m_Name: RandomEventsDatabase
+  m_EditorClassIdentifier: 
+  soloEvents:
+  - randomEvent: 0
+    eventDescription:
+    - 'was bitten by snake! '
+    answers:
+    - text:
+      - Spend a hour trying to suck the poison out
+    - text:
+      - Pray to gods and keep driving
+    results:
+    - text:
+      - And so the poison was sucked out
+    - text:
+      - The poison caused vomiting and diarrhea. What a party!
+  pairEvents:
+  - randomEvent: 7
+    eventDescription:
+    - wants more money
+    answers:
+    - text:
+      - Share the cash
+    - text:
+      - Use force in the name of justice
+    results:
+    - text:
+      - You shared the cash. Everyone's happy again (not really)
+    - text:
+      - The greedy one was hit on the head. The head is hurt now.
+    - text:
+      - A fight broke out. Everyone is hurt now.
+  trioEvents:
+  - randomEvent: 11
+    eventDescription:
+    - spotted a Police car! What should we do??
+    answers:
+    - text:
+      - Stop and talk playing cool
+    - text:
+      - Pedal to the floor!
+    results:
+    - text:
+      - Cop fined you for a funny driving.
+    - text:
+      - Cop recognized you and reached for the gun! It's a show time!
+    - text:
+      - You hit the gas and raced for an hour before the cop lost you. It's better
+        to stay low for now.
+    - text:
+      - You hit the gas and hit the cop with the bumper. He will not forget this
+        any time soon.
+    - text:
+      - You hit the gas but cop shot the driver. It's a show time!
