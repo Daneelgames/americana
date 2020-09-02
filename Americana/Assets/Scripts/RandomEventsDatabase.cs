@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "RandomEventsDatabase", menuName = "ScriptableObjects/RandomEventsDatabase", order = 1)]
 public class RandomEventsDatabase : ScriptableObject
 {
+    public List<string> ok = new List<string>();
+    
+    public List<RandomEvent> universalEvents = new List<RandomEvent>();
     public List<RandomEvent> soloEvents = new List<RandomEvent>();
     public List<RandomEvent> pairEvents = new List<RandomEvent>();
     public List<RandomEvent> trioEvents = new List<RandomEvent>();

@@ -121,7 +121,7 @@ public class ActionWheelController : MonoBehaviour
                 
                 break;
             case WheelAction.Action.Assault:
-                
+                gm.StartCombat();
                 break;
             case WheelAction.Action. Loot:
                 

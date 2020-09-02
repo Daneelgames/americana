@@ -12,6 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a162c97c984a9b468c74eba019e318a, type: 3}
   m_Name: RandomEventsDatabase
   m_EditorClassIdentifier: 
+  ok:
+  - Ok
+  universalEvents:
+  - randomEvent: 4
+    eventDescription:
+    - spotted shack near the road
+    answers:
+    - text:
+      - Let's stop
+    - text:
+      - Let's drive along
+    results:
+    - text:
+      - You stopped
+    - text:
+      - You drove by. Might be for a better
   soloEvents:
   - randomEvent: 0
     eventDescription:
@@ -26,6 +42,23 @@ MonoBehaviour:
       - And so the poison was sucked out
     - text:
       - The poison caused vomiting and diarrhea. What a party!
+    - text:
+      - The snake wasn't poisonous. What a luck!
+  - randomEvent: 1
+    eventDescription:
+    - spotted someone on the road
+    answers:
+    - text:
+      - Let's stop
+    - text:
+      - Let's drive along
+    results:
+    - text:
+      - You stopped
+    - text:
+      - You drove by. The hitchhiker showed you a finger
+    - text:
+      - You drove by. The hitchhiker threw a stone and damaged the car
   pairEvents:
   - randomEvent: 7
     eventDescription:
@@ -42,6 +75,21 @@ MonoBehaviour:
       - The greedy one was hit on the head. The head is hurt now.
     - text:
       - A fight broke out. Everyone is hurt now.
+  - randomEvent: 1
+    eventDescription:
+    - spotted someone on the road
+    answers:
+    - text:
+      - Let's stop
+    - text:
+      - Let's drive along
+    results:
+    - text:
+      - You stopped
+    - text:
+      - You drove by. The hitchhiker showed you a finger
+    - text:
+      - You drove by. The hitchhiker threw a stone and damaged the car
   trioEvents:
   - randomEvent: 11
     eventDescription:

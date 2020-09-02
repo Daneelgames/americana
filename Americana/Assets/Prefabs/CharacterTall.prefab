@@ -116,7 +116,7 @@ MonoBehaviour:
   targetFeedbackScale: 1
   character: {fileID: -7003349141981117141}
   interactiveObject: {fileID: 0}
-  aliveActions: 0200000003000000
+  aliveActions: 03000000
   deadActions: 0100000004000000
 --- !u!1 &476223128442416073
 GameObject:

@@ -8,13 +8,36 @@ public class CharacterGenerator : MonoBehaviour
     
     public CharacterStats tallCharacterPrefab;
     public CharacterStats shortCharacterPrefab;
+    
+    public List<Transform> npcRoadSpawners = new List<Transform>();
+
+    private GameManager gm;
 
     void Awake()
     {
         instance = this;
     }
+
+    void Start()
+    {
+        gm = GameManager.instance;
+    }
+
+    public void SpawnNewCharactersOnTheRoad(int amount)
+    {
+        // create number of characters and place them on spawners
+        // these characters can be either hitchhikers or bandits
+        for (int i = 0; i < amount; i++)
+        {
+            var newChar = CreateCharacter(true); 
+            newChar.transform.position = npcRoadSpawners[i].position;
+            newChar.transform.rotation = npcRoadSpawners[i].rotation;
+            
+            gm.npcCharacters.Add(newChar);
+        }
+    }
     
-    public CharacterStats CreateCharacter(bool npc)
+    CharacterStats CreateCharacter(bool npc)
     {
         CharacterStats newCharacter;
 

@@ -68,7 +68,7 @@ public class CombatManager : MonoBehaviour
     {
         for (int i = 0; i < characters.Count; i++)
         {
-            StartCoroutine(MoveCharacter(characters[i], transforms[i], 0.5f));
+            StartCoroutine(MoveCharacter(characters[i], transforms[i], 1));
         }
     }
 
@@ -200,7 +200,6 @@ public class CombatManager : MonoBehaviour
 
     public void SkipPause()
     {
-        print("here");
         if (currentBattleState == BattleState.TurnStart && charactersInTurnOrder[currentCharacterIndex].inParty && charactersInTurnOrder[currentCharacterIndex].hp > 0 && charactersInTurnOrder[currentCharacterIndex].conscious > 0)
             return;
 
@@ -210,7 +209,6 @@ public class CombatManager : MonoBehaviour
 
     public void NextBattleStep()
     {
-        print("here2");
         switch (currentBattleState)
         {
             case BattleState.TurnStart:

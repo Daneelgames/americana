@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c2cd5b05802344a80797472c83baa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inParty: 1
+  inParty: 0
   name:
   - Harry
   hp: 100
@@ -116,7 +116,7 @@ MonoBehaviour:
   targetFeedbackScale: 1
   character: {fileID: -7003349141981117141}
   interactiveObject: {fileID: 0}
-  aliveActions: 0200000003000000
+  aliveActions: 03000000
   deadActions: 0100000004000000
 --- !u!1 &476223128442416073
 GameObject:

@@ -106,6 +106,7 @@
         </e>
         <e p="CharacterGenerator.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
+        <e p="GameTimeManager.cs" t="Include" />
         <e p="RandomEventsController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActionWheelDatabase.cs" t="Include" />

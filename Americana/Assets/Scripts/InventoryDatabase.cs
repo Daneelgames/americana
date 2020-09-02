@@ -10,7 +10,7 @@ public class InventoryDatabase : ScriptableObject
     public List<Weapon> weapons = new List<Weapon>();
     [Header("hostage, rob, intimidate, seduce")]
     public List<Talent> talents = new List<Talent>();
-    [Header("money, pistolAmmo, revAmmo, shotgunAmmo, gasolin, coffee")]
+    [Header("money, pistolAmmo, revAmmo, shotgunAmmo, gasolin, coffee, sandwich, nuts, potatoChips")]
     public List<Item> items = new List<Item>();
 }
 
@@ -37,7 +37,7 @@ public class Talent
 [Serializable]
 public class Item
 {
-    public enum Items {Money, PistolAmmo, RevolverAmmo, ShotgunAmmo, Gasoline, Coffee}
+    public enum Items {Money, PistolAmmo, RevolverAmmo, ShotgunAmmo, Gasoline, Coffee, Sandwich, Nuts, PotatoChips}
     public List<string> itemName = new List<string>();
     public List<string> itemDescription = new List<string>();
 }

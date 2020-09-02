@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         //StartCombat();
     }
 
-    void StartCombat()
+    public void StartCombat()
     {
         activeCamera = combatManager.combatCamera;
         
@@ -52,12 +52,16 @@ public class GameManager : MonoBehaviour
         // need to find characters who participate in combat
         //
         // remember characters positions in level
+        
+        /*
         SaveCharactersTransforms(partyCharacters, partyTransforms);
         SaveCharactersTransforms(npcCharacters, npcTransforms);
+        */
         
         StartCoroutine(combatManager.StartCombat(partyCharacters, npcCharacters));
     }
 
+    /*
     void SaveCharactersTransforms(List<CharacterStats> characters, List<Transform> transforms)
     {
         for (int j = transforms.Count - 1; j >= 0; j--)
@@ -77,17 +81,21 @@ public class GameManager : MonoBehaviour
             transforms.Add(newTransform);
         }
     }
+    */
 
     void SetActiveCamera(Camera newCam)
     {
         activeCamera = newCam;
 
-        foreach (var ch in npcCharacters)
+        for (var index = 0; index < npcCharacters.Count; index++)
         {
+            var ch = npcCharacters[index];
             ch.interactor.UpdateTargetCamera();
         }
-        foreach (var ch in partyCharacters)
+
+        for (var index = 0; index < partyCharacters.Count; index++)
         {
+            var ch = partyCharacters[index];
             ch.interactor.UpdateTargetCamera();
         }
     }

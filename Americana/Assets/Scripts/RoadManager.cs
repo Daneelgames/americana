@@ -1,19 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RoadManager : MonoBehaviour
 {
     public static RoadManager instance;
     
     public bool moveRoad = false;
+    public bool moveRoadProps = false;
+    public bool countingSteps = false;
     public float moveSpeed = 10;
+    private float moveSpeedCurrent = 0;
 
     [Header("Settings")] 
     public int stepsToNextTown = 5;
     public int currentStep = 0;
 
-    public float timeBetweenSteps = 5;
+    public float timeBetweenStepsMin = 3;
+    public float timeBetweenStepsMax = 6;
     
     public int farPropsAmount = 10;
     public float farPropsBetweenDistance = 15;
@@ -54,41 +60,88 @@ public class RoadManager : MonoBehaviour
     
     void Update()
     {
-        if (moveRoad)
+        if (moveRoadProps)
             MoveRoad();
     }
 
     public void StartDriving()
     {
-        moveRoad = true;
         partyCar.SetBool(drivingString, true);
+        countingSteps = true;
         drivingCoroutine = StartCoroutine(Driving());
+        StartCoroutine(IncreaseSpeed());
+    }
 
+    IEnumerator IncreaseSpeed()
+    {
+        float tCur = 0;
+        float t = 2;
+        moveSpeedCurrent = 0;
+        moveRoadProps = true;
+        moveRoad = true;
+        while (tCur < t)
+        {
+            moveSpeedCurrent = Mathf.Lerp(moveSpeedCurrent, moveSpeed, tCur / t);
+            tCur += Time.deltaTime;
+            yield return null;
+        }
     }
 
     public void StopDriving()
     {
-        moveRoad = false;
         partyCar.SetBool(drivingString, false);
+        countingSteps = false;
         
+        StopCoroutine(drivingCoroutine);
+        StartCoroutine(DecreaseSpeed());
+    }
+    
+    IEnumerator DecreaseSpeed()
+    {
+        float tCur = 0;
+        float t = 2;
+        moveSpeedCurrent = moveSpeed;
+        moveRoad = false;
+        while (tCur < t)
+        {
+            moveSpeedCurrent = Mathf.Lerp(moveSpeedCurrent, 0, tCur / t);
+            tCur += Time.deltaTime;
+            yield return null;
+        }
+        moveRoadProps = false;
+    }
+
+    public void ContinueCountingSteps()
+    {
+        countingSteps = true;
+        drivingCoroutine = StartCoroutine(Driving());
+    }
+    public void StopCountingSteps()
+    {
+        countingSteps = false;
         StopCoroutine(drivingCoroutine);
     }
 
     IEnumerator Driving()
     {
-        yield return new WaitForSeconds(timeBetweenSteps);
+        yield return new WaitForSeconds(Random.Range(timeBetweenStepsMin, timeBetweenStepsMax));
         
         currentStep++;
 
         if (currentStep >= stepsToNextTown)
         {
             //arrive to town
+            //temporal new events 
+            rec.CreateRandomEvent();
+            StopCountingSteps();
+            currentStep = 0;
         }
         else
         {
             // create event
             // show event message
             rec.CreateRandomEvent();
+            StopCountingSteps();
         }
     }
 
@@ -117,7 +170,7 @@ public class RoadManager : MonoBehaviour
     {
         for (int i = 0; i < farBackgroundProps.Count; i++)
         {
-            farBackgroundProps[i].transform.Translate(Vector3.forward * -moveSpeed * Time.deltaTime, Space.World);
+            farBackgroundProps[i].transform.Translate(Vector3.forward * -moveSpeedCurrent * Time.deltaTime, Space.World);
             if (farBackgroundProps[i].transform.position.z < -200)
             {
                 farBackgroundProps[i].transform.position += Vector3.forward * 400;      
@@ -126,7 +179,7 @@ public class RoadManager : MonoBehaviour
         }
         for (int i = 0; i < mediumBackgroundProps.Count; i++)
         {
-            mediumBackgroundProps[i].transform.Translate(Vector3.forward * -moveSpeed * Time.deltaTime, Space.World);
+            mediumBackgroundProps[i].transform.Translate(Vector3.forward * -moveSpeedCurrent * Time.deltaTime, Space.World);
             if (mediumBackgroundProps[i].transform.position.z < -150)
             {
                 mediumBackgroundProps[i].transform.position += Vector3.forward * 300;   
@@ -135,7 +188,7 @@ public class RoadManager : MonoBehaviour
         }
         for (int i = 0; i < closeBackgroundProps.Count; i++)
         {
-            closeBackgroundProps[i].transform.Translate(Vector3.forward * -moveSpeed * Time.deltaTime, Space.World);
+            closeBackgroundProps[i].transform.Translate(Vector3.forward * -moveSpeedCurrent * Time.deltaTime, Space.World);
             if (closeBackgroundProps[i].transform.position.z < -120)
             {
                 closeBackgroundProps[i].transform.position += Vector3.forward * 240;
@@ -149,7 +202,7 @@ public class RoadManager : MonoBehaviour
                 objectsOnRoad.RemoveAt(i);
                 continue;
             }
-            objectsOnRoad[i].transform.Translate(Vector3.forward * -moveSpeed * Time.deltaTime, Space.World);
+            objectsOnRoad[i].transform.Translate(Vector3.forward * -moveSpeedCurrent * Time.deltaTime, Space.World);
             if (objectsOnRoad[i].transform.position.z < -100)
             {
                 Destroy(objectsOnRoad[i]);
